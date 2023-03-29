@@ -38,6 +38,8 @@ public class PropertiesConfig {
     private String err;
     @Value("${url.ds_scopes}")
     private String ds_scopes;
+    @Value("${url.ds_raisc}")
+    private String ds_raisc;
     private List<CcaeItem> ccae = new ArrayList<>();
 
     public int getMaxBytesInMemory() {return maxBytesInMemory;}
@@ -46,6 +48,7 @@ public class PropertiesConfig {
     public String getDs_apitestcircuitbreakers() { return ds_apitestcircuitbreakers; }
     public String getDs_test() { return ds_test; }
     public String getDs_scopes() { return ds_scopes; }
+    public String getDs_raisc() {return ds_raisc;}
 
     public String getDs_economicActivities() { return ds_economicActivities;}
     public String getSecret() {return secret; }
