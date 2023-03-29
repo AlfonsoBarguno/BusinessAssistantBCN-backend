@@ -206,7 +206,7 @@ class GencatControllerTest {
 
 
     @Test
-    void getRaiscByYearTest(){
+    void getRaiscByYearTest() throws MalformedURLException {
         final String URI_TEST = "/raisc/year/2022";
         when(raiscService.getPageByRaiscYear(0,-1, "2022")).thenReturn(Mono.just(getGenericResultDtoRaiscByYear()));
         webTestClient.get()
